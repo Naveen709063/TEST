@@ -1,16 +1,7 @@
 on: push
 jobs:
   first-job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - run: node --version
       - run: npm  --version 
-
-on: pull_request
- jobs:
-    second_job:
-      runs-on: ubuntu-latest
-      steps:
-        - run: git --version
-
-  
